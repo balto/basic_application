@@ -1,0 +1,1257 @@
+2012/11/24 20:40:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: DELETE FROM sessions WHERE sess_time<1353786053.
+in C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php (121)
+in C:\xampp\htdocs\basic\protected\components\EWebUser.php (24)
+in C:\xampp\htdocs\basic\protected\views\layouts\main.php (6)
+2012/11/24 20:40:53 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: 
+	        	SELECT sess_data FROM sessions
+	        	WHERE sess_time>1353786053 AND sess_id=:id
+	        	. Bound with :id='l22gl5aibk5b6usn5gam3pc744'.
+in C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php (144)
+in C:\xampp\htdocs\basic\protected\components\EWebUser.php (24)
+in C:\xampp\htdocs\basic\protected\views\layouts\main.php (6)
+2012/11/24 20:40:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand hibába ütközött az SQL parancs végrehajtása közben: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: 
+	        	SELECT sess_data FROM sessions
+	        	WHERE sess_time>1353786053 AND sess_id=:id
+	        	. Bound with :id='l22gl5aibk5b6usn5gam3pc744'' in C:\xampp\htdocs\yii_112\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php(144): CDbCommand->queryScalar()
+#2 [internal function]: EDbHttpSession->readSession('l22gl5aibk5b6us...')
+#3 C:\xampp\htdocs\yii_112\web\CHttpSession.php(115): session_start()
+#4 C:\xampp\htdocs\yii_112\web\CHttpSession.php(89): CHttpSession->open()
+#5 C:\xampp\htdocs\yii_112\base\CModule.php(388): CHttpSession->init()
+#6 C:\xampp\htdocs\yii_112\web\CWebApplication.php(202): CModule->getComponent('session')
+#7 C:\xampp\htdocs\yii_112\web\auth\CWebUser.php(195): CWebApplication->getSession()
+#8 C:\xampp\htdocs\basic\protected\components\EWebUser.php(24): CWebUser->init()
+#9 C:\xampp\htdocs\yii_112\base\CModule.php(388): EWebUser->init()
+#10 C:\xampp\htdocs\yii_112\base\CModule.php(104): CModule->getComponent('user')
+#11 C:\xampp\htdocs\basic\protected\views\layouts\main.php(6): CModule->__get('user')
+#12 C:\xampp\htdocs\yii_112\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii_112\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii_112\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(50): CController->render('dummy')
+#16 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii_112\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii_112\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): CController->run('')
+#21 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\basic\index.php(20): CApplication->run()
+#24 {main}
+REQUEST_URI=/basic/
+---
+2012/11/24 20:41:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: DELETE FROM sessions WHERE sess_time<1353786080.
+in C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php (121)
+in C:\xampp\htdocs\basic\protected\components\EWebUser.php (24)
+in C:\xampp\htdocs\basic\protected\views\layouts\main.php (63)
+2012/11/24 20:41:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: 
+	        	SELECT sess_data FROM sessions
+	        	WHERE sess_time>1353786080 AND sess_id=:id
+	        	. Bound with :id='l22gl5aibk5b6usn5gam3pc744'.
+in C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php (144)
+in C:\xampp\htdocs\basic\protected\components\EWebUser.php (24)
+in C:\xampp\htdocs\basic\protected\views\layouts\main.php (63)
+2012/11/24 20:41:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand hibába ütközött az SQL parancs végrehajtása közben: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'application.sessions' doesn't exist. The SQL statement executed was: 
+	        	SELECT sess_data FROM sessions
+	        	WHERE sess_time>1353786080 AND sess_id=:id
+	        	. Bound with :id='l22gl5aibk5b6usn5gam3pc744'' in C:\xampp\htdocs\yii_112\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\basic\protected\components\EDbHttpSession.php(144): CDbCommand->queryScalar()
+#2 [internal function]: EDbHttpSession->readSession('l22gl5aibk5b6us...')
+#3 C:\xampp\htdocs\yii_112\web\CHttpSession.php(115): session_start()
+#4 C:\xampp\htdocs\yii_112\web\CHttpSession.php(89): CHttpSession->open()
+#5 C:\xampp\htdocs\yii_112\base\CModule.php(388): CHttpSession->init()
+#6 C:\xampp\htdocs\yii_112\web\CWebApplication.php(202): CModule->getComponent('session')
+#7 C:\xampp\htdocs\yii_112\web\auth\CWebUser.php(195): CWebApplication->getSession()
+#8 C:\xampp\htdocs\basic\protected\components\EWebUser.php(24): CWebUser->init()
+#9 C:\xampp\htdocs\yii_112\base\CModule.php(388): EWebUser->init()
+#10 C:\xampp\htdocs\yii_112\base\CModule.php(104): CModule->getComponent('user')
+#11 C:\xampp\htdocs\basic\protected\views\layouts\main.php(63): CModule->__get('user')
+#12 C:\xampp\htdocs\yii_112\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii_112\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii_112\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(50): CController->render('dummy')
+#16 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii_112\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii_112\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): CController->run('')
+#21 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\basic\index.php(20): CApplication->run()
+#24 {main}
+REQUEST_URI=/basic/
+---
+2012/11/24 20:42:27 [error] [exception.CException] exception 'CException' with message 'LoginForm and its behaviors do not have a method or closure named "getNameFormat".' in C:\xampp\htdocs\yii_112\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(74): CComponent->__call('getNameFormat', Array)
+#1 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(74): LoginForm->getNameFormat()
+#2 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii_112\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii_112\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): CController->run('login')
+#7 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\basic\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/basic/index.php/site/login
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/e-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/e-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/s-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/s-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/ne-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/ne-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/nw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/nw-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/se-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/se-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/sw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/sw-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:29 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic/index.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/s-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/s-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/nw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/nw-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/se-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/se-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/ne-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/ne-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/e-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/e-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/sw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/sw-handle.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:51:51 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic/index.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:53:06 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_11\YiiBase.php(396): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_11\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_11\web\CController.php(300): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_11\web\CController.php(278): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_11\web\CController.php(257): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_11\web\CWebApplication.php(328): SiteController->run()
+#9 C:\xampp\htdocs\yii_11\web\CWebApplication.php(121): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_11\base\CApplication.php(155): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic/index.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:53:21 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic/index.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://localhost/basic/
+---
+2012/11/24 20:53:44 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/basic/index_dev.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/nw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/nw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/se-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/se-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/ne-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/ne-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/s-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/s-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/e-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/e-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/sw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/sw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:28 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/basic/index_dev.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 20:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/se-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/se-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/nw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/nw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/e-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/e-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/ne-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/ne-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/s-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/s-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/sw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/sw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 20:54:42 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/basic/index_dev.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 21:02:08 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/basic/index_dev.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/24 21:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/se-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/se-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/s-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/s-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/ne-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/ne-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/nw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/nw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/sw-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/sw-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/sizer/e-handle.gif".' in C:\xampp\htdocs\yii_112\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 C:\xampp\htdocs\yii_112\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\basic\index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/basic/resources/themes/images/default/sizer/e-handle.gif
+HTTP_REFERER=http://localhost/basic/index_dev.php
+---
+2012/11/24 21:04:43 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\basic\protected\components\EFormModel.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\basic\protected\models\LoginForm.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_112\YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\basic\protected\controllers\SiteController.php(73): spl_autoload_call()
+#4 C:\xampp\htdocs\yii_112\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii_112\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_112\web\CController.php(287): SiteController->runAction()
+#7 C:\xampp\htdocs\yii_112\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_112\web\CWebApplication.php(283): SiteController->run()
+#9 C:\xampp\htdocs\yii_112\web\CWebApplication.php(142): BasicWebApplication->runController()
+#10 C:\xampp\htdocs\yii_112\base\CApplication.php(162): BasicWebApplication->processRequest()
+#11 C:\xampp\htdocs\basic\index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic/index.php/site/login
+in C:\xampp\htdocs\basic\protected\components\EFormModel.php (2)
+in C:\xampp\htdocs\basic\protected\models\LoginForm.php (9)
+in C:\xampp\htdocs\basic\protected\controllers\SiteController.php (73)
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/button/arrow.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/button/arrow.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/trigger.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/trigger.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-first-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-first-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/exclamation.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/exclamation.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-next-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-next-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-last-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-last-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/refresh.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/refresh.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-next.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-next.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-last.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-last.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/loading.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/loading.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-first.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-first.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/grid3-hd-btn.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/grid3-hd-btn.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/shared/icon-question.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/shared/icon-question.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/group-collapse.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/group-collapse.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/checkbox.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/checkbox.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:30:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/invalid_line.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/invalid_line.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/button/arrow.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/button/arrow.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/trigger.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/trigger.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/exclamation.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/exclamation.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-next-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-next-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-first-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-first-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-last-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-last-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/refresh.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/refresh.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/group-collapse.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/group-collapse.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/checkbox.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/checkbox.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/invalid_line.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/invalid_line.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/button/arrow.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/button/arrow.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-next-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-next-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/exclamation.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/exclamation.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-first-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-first-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/trigger.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/trigger.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-last-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-last-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/refresh.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/refresh.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/group-collapse.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/group-collapse.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/checkbox.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/checkbox.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/invalid_line.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/invalid_line.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:34:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/dd/drop-no.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/dd/drop-no.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/button/arrow.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/button/arrow.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/trigger.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/trigger.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/exclamation.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/exclamation.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-next-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-next-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-first-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-first-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-last-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-last-disabled.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/refresh.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/refresh.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/group-collapse.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/group-collapse.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/checkbox.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/checkbox.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/tools/tool-sprites.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/tools/tool-sprites.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/invalid_line.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/invalid_line.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:41:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/form/text-bg.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/form/text-bg.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/loading.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/loading.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/grid3-hd-btn.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/grid3-hd-btn.gif
+HTTP_REFERER=http://basic_application.loc/css/extjs4/ext-all.css
+---
+2012/11/25 16:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/themes/images/default/grid/page-prev-disabled.gif".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('resources/theme...')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/themes/images/default/grid/page-prev-disabled.gif
+---
+2012/11/25 16:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /var/www/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(142): CWebApplication->runController('undefined')
+#1 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/undefined
+HTTP_REFERER=http://basic_application.loc/
+---
+2012/11/25 16:48:11 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (/var/www/basic_application/protected/components/EFormModel.php:2)
+Stack trace:
+#0 /var/www/basic_application/protected/models/LoginForm.php(9): spl_autoload_call()
+#1 /var/www/framework/YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 /var/www/basic_application/protected/controllers/SiteController.php(73): spl_autoload_call()
+#4 /var/www/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /var/www/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/framework/web/CController.php(287): SiteController->runAction()
+#7 /var/www/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /var/www/framework/web/CWebApplication.php(142): BasicWebApplication->runController()
+#10 /var/www/framework/base/CApplication.php(162): BasicWebApplication->processRequest()
+#11 /var/www/basic_application/index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/index_dev.php/site/login
+in /var/www/basic_application/protected/components/EFormModel.php (2)
+in /var/www/basic_application/protected/models/LoginForm.php (9)
+in /var/www/basic_application/protected/controllers/SiteController.php (73)
+2013/01/18 13:28:54 [error] [php] Use of undefined constant errors - assumed 'errors' (/var/www/basic_application/protected/extensions/phputils/Arrays.php:18)
+Stack trace:
+#0 /var/www/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/framework/web/CController.php(287): DefaultUserController->runAction()
+#2 /var/www/framework/web/CController.php(266): DefaultUserController->runActionWithFilters()
+#3 /var/www/framework/web/CWebApplication.php(283): DefaultUserController->run()
+#4 /var/www/framework/web/CWebApplication.php(142): BasicWebApplication->runController()
+#5 /var/www/framework/base/CApplication.php(162): BasicWebApplication->processRequest()
+#6 /var/www/basic_application/index.php(20): BasicWebApplication->run()
+REQUEST_URI=/basic_application/index.php/user/defaultUser/saveProfile
+in /var/www/basic_application/protected/extensions/phputils/Arrays.php (18)
+in /var/www/basic_application/protected/modules/user/controllers/DefaultUserController.php (103)
+in /var/www/basic_application/index.php (20)
+2013/10/12 18:56:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /var/www/yii_1.1.10/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii_1.1.10/web/CWebApplication.php(135): CWebApplication->runController('undefined')
+#1 /var/www/yii_1.1.10/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index_dev.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/undefined
+HTTP_REFERER=http://basic_application.loc/
+---
+2013/10/12 18:56:13 [error] [php] Declaration of EFormModel::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (/var/www/basic_application/protected/components/EFormModel.php:2)
+Stack trace:
+#0 /var/www/basic_application/protected/models/LoginForm.php(9): spl_autoload_call()
+#1 /var/www/yii_1.1.10/YiiBase.php(418): include()
+#2 unknown(0): autoload()
+#3 /var/www/basic_application/protected/controllers/SiteController.php(73): spl_autoload_call()
+#4 /var/www/yii_1.1.10/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /var/www/yii_1.1.10/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/yii_1.1.10/web/CController.php(287): SiteController->runAction()
+#7 /var/www/yii_1.1.10/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/yii_1.1.10/web/CWebApplication.php(276): SiteController->run()
+#9 /var/www/yii_1.1.10/web/CWebApplication.php(135): BasicWebApplication->runController()
+#10 /var/www/yii_1.1.10/base/CApplication.php(162): BasicWebApplication->processRequest()
+#11 /var/www/basic_application/index_dev.php(17): BasicWebApplication->run()
+REQUEST_URI=/index_dev.php/site/login
+in /var/www/basic_application/protected/components/EFormModel.php (2)
+in /var/www/basic_application/protected/models/LoginForm.php (9)
+in /var/www/basic_application/protected/controllers/SiteController.php (73)
+2013/10/12 19:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined".' in /var/www/yii_1.1.10/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii_1.1.10/web/CWebApplication.php(135): CWebApplication->runController('undefined')
+#1 /var/www/yii_1.1.10/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/basic_application/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/undefined
+HTTP_REFERER=http://basic_application.loc/
+---
